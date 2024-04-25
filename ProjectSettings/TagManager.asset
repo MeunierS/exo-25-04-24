@@ -8,6 +8,7 @@ TagManager:
   - Pillar
   - Enemy
   - Goal
+  - Pause
   layers:
   - Default
   - TransparentFX
