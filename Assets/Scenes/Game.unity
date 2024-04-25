@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 42554626}
   - component: {fileID: 42554629}
   m_Layer: 8
-  m_Name: Cylinder
+  m_Name: Cylinder1
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,6 +457,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 1911436307}
+  - {fileID: 763590013}
+  rend: {fileID: 0}
 --- !u!1 &46620434
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +475,7 @@ GameObject:
   - component: {fileID: 46620436}
   - component: {fileID: 46620439}
   m_Layer: 8
-  m_Name: Cylinder (1)
+  m_Name: Cylinder5
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,6 +585,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 1695850940}
+  - {fileID: 758451159}
+  rend: {fileID: 0}
 --- !u!1 &62159106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1433,7 @@ GameObject:
   - component: {fileID: 758451156}
   - component: {fileID: 758451159}
   m_Layer: 8
-  m_Name: Cylinder (7)
+  m_Name: Cylinder6
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,6 +1543,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 46620439}
+  - {fileID: 878302297}
+  rend: {fileID: 0}
 --- !u!1 &759885973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,7 +1666,7 @@ GameObject:
   - component: {fileID: 763590010}
   - component: {fileID: 763590013}
   m_Layer: 8
-  m_Name: Cylinder (5)
+  m_Name: Cylinder2
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1764,6 +1776,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 42554629}
+  - {fileID: 1946208895}
+  rend: {fileID: 0}
 --- !u!1 &764478851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,7 +1948,7 @@ GameObject:
   - component: {fileID: 878302294}
   - component: {fileID: 878302297}
   m_Layer: 8
-  m_Name: Cylinder (2)
+  m_Name: Cylinder7
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2042,6 +2058,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 1911436307}
+  - {fileID: 758451159}
+  rend: {fileID: 0}
 --- !u!1 &900019363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,6 +2697,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ff6d42a94b8a74e906ba707b8ce527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pillar:
+  - {fileID: 42554629}
+  - {fileID: 46620439}
+  - {fileID: 878302297}
+  - {fileID: 1946208895}
+  - {fileID: 1911436307}
+  - {fileID: 763590013}
+  - {fileID: 1695850940}
+  - {fileID: 758451159}
+  material: {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
 --- !u!136 &1255128938
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3448,7 +3478,7 @@ GameObject:
   - component: {fileID: 1695850937}
   - component: {fileID: 1695850940}
   m_Layer: 8
-  m_Name: Cylinder (6)
+  m_Name: Cylinder4
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3558,6 +3588,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 1946208895}
+  - {fileID: 46620439}
+  rend: {fileID: 0}
 --- !u!1 &1841847653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3693,13 +3727,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 42554625}
-  - {fileID: 46620435}
-  - {fileID: 878302293}
-  - {fileID: 1946208891}
-  - {fileID: 1911436303}
   - {fileID: 763590009}
+  - {fileID: 1946208891}
   - {fileID: 1695850936}
+  - {fileID: 46620435}
   - {fileID: 758451155}
+  - {fileID: 878302293}
+  - {fileID: 1911436303}
   m_Father: {fileID: 62159107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1910192077
@@ -3786,7 +3820,7 @@ GameObject:
   - component: {fileID: 1911436304}
   - component: {fileID: 1911436307}
   m_Layer: 8
-  m_Name: Cylinder (4)
+  m_Name: Cylinder8
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3896,6 +3930,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 42554629}
+  - {fileID: 878302297}
+  rend: {fileID: 0}
 --- !u!1 &1946208890
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,7 +3948,7 @@ GameObject:
   - component: {fileID: 1946208892}
   - component: {fileID: 1946208895}
   m_Layer: 8
-  m_Name: Cylinder (3)
+  m_Name: Cylinder3
   m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4020,6 +4058,10 @@ MonoBehaviour:
   material:
   - {fileID: 2100000, guid: 21096fee6cd473344aecf46e0faba80f, type: 2}
   - {fileID: 2100000, guid: 49d769e9c44348047b4be4e6262565c8, type: 2}
+  adjacents:
+  - {fileID: 1695850940}
+  - {fileID: 763590013}
+  rend: {fileID: 0}
 --- !u!1 &1975134804
 GameObject:
   m_ObjectHideFlags: 0

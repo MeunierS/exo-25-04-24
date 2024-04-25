@@ -6,7 +6,8 @@ public class Pillar : MonoBehaviour
 {
     public Enemy enemy;
     public Material[] material;
-    Renderer rend;
+    public Pillar[] adjacents;
+    [HideInInspector] public Renderer rend;
     // Start is called before the first frame update
     void Awake(){
         rend = GetComponent<Renderer>();
@@ -28,7 +29,9 @@ public class Pillar : MonoBehaviour
         if(other.CompareTag("Player")){
             //change color + adjacent ones
             ChangeColor();
-            //todo adjacent change color
+            //adjacent change color
+            adjacents[0].ChangeColor();
+            adjacents[1].ChangeColor();
             //create a new enemy
             Instantiate(enemy, new Vector3(0, 1f, 0), Quaternion.identity);
         }
