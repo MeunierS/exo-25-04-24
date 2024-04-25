@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Goal : MonoBehaviour
 {
     public Pillar[] pillar;
+    [HideInInspector] public bool goalActive=false;
     public Material material;
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,9 @@ public class Goal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TestIfAllGreen();
     }
-    void OnTriggerEnter()
-    {
+    void TestIfAllGreen(){
         if(pillar[0].rend.sharedMaterial.Equals(material)){
             if(pillar[1].rend.sharedMaterial.Equals(material)){
                 if(pillar[2].rend.sharedMaterial.Equals(material)){
@@ -27,7 +28,7 @@ public class Goal : MonoBehaviour
                             if(pillar[5].rend.sharedMaterial.Equals(material)){
                                 if(pillar[6].rend.sharedMaterial.Equals(material)){
                                     if(pillar[7].rend.sharedMaterial.Equals(material)){
-                                        SceneManager.LoadScene("MainMenu");
+                                        goalActive=true;
                                     }
                                 }
                             }
@@ -35,6 +36,12 @@ public class Goal : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+    void OnTriggerEnter()
+    {
+        if(goalActive){
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
