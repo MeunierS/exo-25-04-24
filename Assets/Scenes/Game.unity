@@ -880,6 +880,7 @@ GameObject:
   - component: {fileID: 334894313}
   - component: {fileID: 334894312}
   - component: {fileID: 334894311}
+  - component: {fileID: 334894314}
   m_Layer: 7
   m_Name: Hair
   m_TagString: Untagged
@@ -973,6 +974,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334894309}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &334894314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334894309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9714c6166d871004c9945e0611752c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material:
+  - {fileID: 2100000, guid: db4ef2e2dd884fb4898315dd5a183c5c, type: 2}
+  - {fileID: 2100000, guid: 0556e46c8c2fa7f4a8aa47055844811b, type: 2}
+  - {fileID: 2100000, guid: bb7077998f282b04fb536977073bf387, type: 2}
+  - {fileID: 2100000, guid: 4db330bebed2f004c98d5336fd26faaf, type: 2}
+  - {fileID: 2100000, guid: 72c9cbcea8b6aba4b8c5aa2d827041f8, type: 2}
+  rend: {fileID: 0}
 --- !u!1 &353306491 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,

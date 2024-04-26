@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] public Transform target;
     [HideInInspector] public NavMeshAgent agent;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,5 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         agent.SetDestination(target.position);
-
     }
 }
