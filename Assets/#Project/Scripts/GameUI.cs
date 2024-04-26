@@ -18,11 +18,11 @@ public class GameUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(goal.goalActive){
+        if(goal.TestIfAllGreen()){
             portalActive.SetText($"Portal is now Active !!!");
         }
         else{
-            portalActive.SetText($"Portal is not active");
+            portalActive.SetText($"Portal is not yet active");
         }      
     }
     void OnTriggerEnter(Collider other){
